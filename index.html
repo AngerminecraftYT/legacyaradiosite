@@ -156,7 +156,7 @@
         }
 
         function refreshStats() {
-            $.get(`https://manage.angerwashere.xyz/api/nowplaying/noname_radio`, station => {
+            $.get(`https://manage.angerwashere.xyz/api/nowplaying/voltradio`, station => {
                 $('.nyxrXR').text(station.now_playing.song.title);
                 $('.VEdowy').text(station.now_playing.song.artist);
                 $('.jZrGRR').text(`♬ ${station.live.streamer_name}`);

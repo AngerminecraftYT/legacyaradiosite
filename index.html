@@ -156,7 +156,7 @@
         }
 
         function refreshStats() {
-            $.get(`https://manage.angerwashere.xyz/api/nowplaying/noname_radio`, station => {
+            $.get(`https://manage.angerwashere.xyz/api/nowplaying/voltradio`, station => {
                 $('.nyxrXR').text(station.now_playing.song.title);
                 $('.VEdowy').text(station.now_playing.song.artist);
                 $('.jZrGRR').text(`♬ ${station.live.streamer_name}`);
@@ -188,7 +188,7 @@
 
         function toggleRadio() {
             if (playing == 0) {
-                $("#audio").attr("src", "https://manage.angerwashere.xyz/listen/noname_radio/radio.mp3"); // https://manage.angerwashere.xyz/listen/noname_radio/radio.mp3
+                $("#audio").attr("src", "https://manage.angerwashere.xyz/listen/voltradio/radio.mp3"); // https://manage.angerwashere.xyz/listen/noname_radio/radio.mp3
                 $("#audio")[0].play().then(function () {
                     $(".qcErhi").attr("class", "fa-solid fa-pause qcErhi");
                     $(".ffQjoo").attr("class", "ffQjoo");

@@ -12,6 +12,7 @@
     <title>VoltRadio</title>
     <link rel="icon" type="image/x-icon" href="radio.ico">
     <link rel="apple-touch-icon" href="/logo.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta1/css/all.css">
@@ -129,9 +130,9 @@
 </head>
 
 <body onclick="firstPlay()"> <audio id="audio" volume="0" src="index.html" crossorigin="anonymous"></audio> <img
-        src="radio.png" class="WygrFd"> <img src="https://cdn.discordapp.com/attachments/969870083423875072/1127294231527030844/powered_by.png"
+        src="radio.png" class="WygrFd"> <img src="https://cdn.discordapp.com/attachments/968033858727579648/1155548582255013909/VO_LT.png"
         class="SWrlri">
-    <div class="pUBvKJ"> <img draggable="false" src="https://cdn.discordapp.com/attachments/969870083423875072/1127294231527030844/powered_by.png" class="hJGjAf">
+    <div class="pUBvKJ"> <img draggable="false" src="https://cdn.discordapp.com/attachments/968033858727579648/1155548582255013909/VO_LT.png" class="hJGjAf">
         <h1 class="nyxrXR">idk name</h1>
         <h2 class="VEdowy">Loading, please refresh if taking longer then 30 seconds..</h2>
         <h3 class="jZrGRR">This service is 24/7 but may expirience downtime.</h3>
@@ -177,7 +178,7 @@
                 $.get(`https://tools.elevatehosting.co.uk/api/v2/lookup/song?title=${encodeURI(station.now_playing.song.title)}&artist=${encodeURI(station.now_playing.song.artist)}`,
                     xonos => {
                         $('.SWrlri, .hJGjAf').attr('src', xonos.result.covers.big ||
-                            "https://cdn.discordapp.com/attachments/969870083423875072/1127294231527030844/powered_by.png");
+                            "https://cdn.discordapp.com/attachments/968033858727579648/1155548582255013909/VO_LT.png");
                     });
             });
         }
@@ -189,7 +190,7 @@
 
         function toggleRadio() {
             if (playing == 0) {
-                $("#audio").attr("src", "https://manage.angerwashere.xyz/listen/voltradio/radio.mp3"); // https://manage.angerwashere.xyz/listen/noname_radio/radio.mp3
+                $("#audio").attr("src", "https://manage.angerwashere.xyz/listen/voltradio/radio.mp3"); // https://manage.angerwashere.xyz/listen/noname_radio/radio.mp3 has been updated to new name
                 $("#audio")[0].play().then(function () {
                     $(".qcErhi").attr("class", "fa-solid fa-pause qcErhi");
                     $(".ffQjoo").attr("class", "ffQjoo");
